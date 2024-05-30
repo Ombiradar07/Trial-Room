@@ -1,0 +1,85 @@
+body {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 48px 0 0;
+}
+.sidebarr {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 48px 0 0;
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main-content {
+    margin-left: 20%; /* Margin to ensure no overlap with the fixed sidebars */
+    margin-right: 20%; /* Margin to ensure no overlap with the fixed sidebars */
+    width: 100%; /* Adjust the width to occupy the remaining space */
+    padding: 20px; /* Add padding for better appearance */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.card-columns {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align card columns horizontally in the center */
+    padding-top: 20px; /* Add padding from top to cards */
+}
+.card {
+    flex: 0 1 calc(31% - 20px); /* Adjust card width to fit four columns */
+    margin: 10px; /* Add margin between cards */
+   
+}
+
+.carousel-inner {
+    width: 100%;
+    
+}
+.carousel {
+    margin-top: 30px; /* Adjust the top margin */
+}
+
+.carousel-inner {
+    height: 600px; /* Adjust the height of the carousel */
+}
+
+.carousel-item img {
+    height: 100%; /* Make the images fill the carousel item */
+    width: auto; /* Maintain aspect ratio */
+}
+#slider-container {
+    position: relative;
+
+}
+
+
+.text-below-slider {
+    padding-right: 120px;
+    text-align:left;
+    position:absolute;
+    bottom: 80px; /* Adjust vertical position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
